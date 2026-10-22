@@ -1,0 +1,60 @@
+:root{--bg:#fff;--text:#222;--muted:#555;--link:#0e7490;--border:#ccc;--chip:#eef2f4}
+[data-theme="dark"]{--bg:#474747;--text:#fff;--muted:#ddd;--link:#5fd0e8;--border:#999;--chip:#585858}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;font-size:16px;line-height:1.5;transition:background .2s,color .2s}
+a{color:var(--link)}
+.masthead{border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--bg);z-index:10}
+.greedy{max-width:1200px;margin:0 auto;padding:0 3rem;display:flex;align-items:center;gap:2rem;min-height:44px;flex-wrap:wrap}
+.site-title{font-weight:700;font-size:1.1rem;color:var(--text);text-decoration:none;padding:.6rem 0;border-bottom:2px solid var(--text);line-height:1.2}
+.nav-links{list-style:none;display:flex;gap:1.6rem;margin:0 auto 0 0;padding:0;align-items:center;flex-wrap:wrap}
+.nav-links a{color:var(--text);text-decoration:none;font-size:1.02rem;padding:.6rem 0;display:block}
+.nav-links a:hover,.nav-links a.active{text-decoration:underline}
+.icon-btn{background:none;border:0;color:var(--text);cursor:pointer;padding:.5rem}
+.menu-toggle{display:none;margin-left:auto;background:none;border:1px solid var(--border);color:var(--text);padding:.3rem .7rem;border-radius:4px}
+.layout{max-width:1200px;margin:0 auto;padding:2rem 3rem;display:flex;gap:3rem;align-items:flex-start;min-height:70vh}
+.sidebar{width:250px;flex:none;font-size:.85rem;position:sticky;top:70px}
+.avatar{width:175px;height:175px;border-radius:50%;overflow:hidden;border:1px solid var(--border);padding:4px;margin-bottom:1rem}
+.avatar svg,.avatar img{width:100%;height:100%;border-radius:50%;display:block;object-fit:cover}
+.author-name{margin:.5rem 0 0;font-size:1.15rem}
+.role{margin:.1rem 0;color:var(--muted)}
+.bio{margin:.7rem 0 1.2rem}
+.author-links{list-style:none;padding:0;margin:0}
+.author-links li{margin:.65rem 0;display:flex;align-items:center;gap:.6rem}
+.author-links a{color:var(--text);text-decoration:none;display:flex;align-items:center;gap:.6rem}
+.author-links a:hover{text-decoration:underline}
+.content{flex:1;max-width:800px;min-width:0}
+h1{font-size:1.75rem;line-height:1.2;margin:0 0 .8rem}
+h2{font-size:1.3rem;margin:1.8rem 0 .5rem;border-bottom:1px solid var(--border);padding-bottom:.2rem}
+p{margin:0 0 1.1rem}
+.intro{color:var(--muted)}
+.counts{display:flex;flex-wrap:wrap;gap:.8rem;margin:1.5rem 0}
+.counts a{text-decoration:none;color:var(--text);border:1px solid var(--border);border-radius:6px;padding:.6rem 1rem;text-align:center;min-width:110px}
+.counts a:hover{background:var(--chip)}
+.counts b{display:block;font-size:1.6rem;line-height:1.1}
+.search{width:100%;padding:.5rem .7rem;margin:.3rem 0 1rem;border:1px solid var(--border);border-radius:4px;background:var(--bg);color:var(--text);font:inherit}
+.items{list-style:none;padding:0;margin:0}
+.items li{padding:.9rem 0;border-bottom:1px solid rgba(127,127,127,.35)}
+.items h3{margin:0 0 .15rem;font-size:1.05rem;line-height:1.35}
+.items .chapter{margin:0 0 .15rem;font-weight:600}
+.items .authors{margin:0;font-size:.92rem}
+.items .meta{color:var(--muted);font-size:.9rem;margin:.1rem 0 0}
+.tag{display:inline-block;background:var(--chip);border-radius:3px;padding:0 .45rem;font-size:.78rem;margin-top:.3rem}
+.empty{color:var(--muted)}
+.term table{border-collapse:collapse;width:100%}
+.term td{padding:.3rem .4rem;border-bottom:1px solid rgba(127,127,127,.3)}
+.term td:last-child{text-align:right;width:70px;color:var(--muted)}
+.cv-item{display:flex;gap:1rem;padding:.35rem 0}
+.cv-item .when{flex:0 0 95px;color:var(--muted)}
+.cv-item .note{display:block;color:var(--muted);font-size:.9rem}
+.footer{border-top:1px solid var(--border);padding:1.5rem 3rem;font-size:.8rem}
+.footer p{margin:.3rem auto;max-width:1200px}
+@media(max-width:800px){
+ .greedy{padding:0 1rem;gap:1rem}
+ .menu-toggle{display:block}
+ .nav-links{display:none;flex-direction:column;align-items:flex-start;gap:0;width:100%;margin:0 0 .5rem}
+ .nav-links.open{display:flex}
+ .layout{flex-direction:column;padding:1.5rem 1rem;gap:1.5rem}
+ .sidebar{position:static;width:100%}
+ .footer{padding:1rem}
+ .cv-item{flex-direction:column;gap:0}
+}
