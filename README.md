@@ -1,21 +1,19 @@
 # Akademik Sayfa
 
-Tüm içerik **`content.js`** dosyasındadır. HTML/CSS/JS dosyalarına dokunmanız gerekmez.
+Tüm içerik **content.js** dosyasındadır. HTML/CSS/JS dosyalarına dokunmanız gerekmez.
 
-## GitHub'da yayınlama
-1. `kullaniciadi.github.io` adında bir repo oluşturun.
-2. Bu klasördeki tüm dosyaları reponun köküne yükleyin.
-3. Settings → Pages → Branch: `main`, Folder: `/ (root)` → Save.
+## Yayınlama (GitHub Pages)
+1. `kullaniciadi.github.io` adlı bir repo oluşturun.
+2. Bu klasörün **içindekileri** (`index.html`, `style.css`, `script.js`, `content.js`, `README.md`, varsa `files/`) reponun köküne yükleyin. Zip'in kendisini değil.
+3. Settings > Pages: `main` dalı, `/ (root)`.
+4. Eski dosyalar (ör. `data.js`) repoda kalmışsa silin.
 
-## GitHub web arayüzünden güncelleme
-1. Repoda `content.js` dosyasını açın → sağ üstteki **kalem** simgesine tıklayın.
-2. Değişikliği yapın → **Commit changes**. Birkaç dakika içinde site güncellenir.
+## Güncelleme
+- GitHub'da `content.js` dosyasını açın, kalem simgesine tıklayın, düzenleyin, **Commit changes** deyin.
+- Yeni yayın: ilgili listede bir satırı kopyalayıp başa yapıştırın, değerleri değiştirin.
+- Fotoğraf: `files/foto.jpg` yükleyin, `photo: "files/foto.jpg"` yazın.
+- CV PDF: `files/cv.pdf` yükleyin, `pdf: "files/cv.pdf"` yazın.
+- Bir bölümü gizlemek için `show: false`.
 
-## Sık yapılanlar
-- **Yeni makale:** `id: "makaleler"` bölümündeki bir satırı kopyalayıp en üste yapıştırın, değerleri değiştirin.
-- **Google Scholar / YÖK / GitHub bağlantısı:** dosyanın başındaki `links` bölümüne adresi yazın. Boşlar gizlenir.
-- **Fotoğraf:** `files/foto.jpg` olarak yükleyin, `photo: "files/foto.jpg"` yazın.
-- **CV PDF:** `files/cv.pdf` yükleyin, `pdf: "files/cv.pdf"` yazın.
-- **Bölümü gizleme:** ilgili bölümde `show: true` yerine `show: false` yazın.
-- **Yeni ders dönemi:** `id: "dersler"` bölümüne `{"term":"2025-2026","level":"Lisans","courses":[["Ders adı",2]]}` satırı ekleyin.
-- Virgül ve tırnakları silmemeye dikkat edin.
+## Renkler
+`style.css` dosyasının en üstündeki `:root` (açık tema) ve `[data-theme="dark"]` (koyu tema) bloklarında. Ana renk `--primary` (bordo), vurgu `--accent` (altın).
