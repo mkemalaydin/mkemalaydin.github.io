@@ -188,6 +188,28 @@ window.CONTENT = {
       {"title": "Ortaöğretim öğrencilerinin fiziksel okuryazarlık, akademik öz-yeterlik ve akademik başarı düzeyleri arasındaki ilişki", "authors": "Damla Nur Şahin Paşaoğlu", "venue": "Hitit Üniversitesi", "year": "2024", "tags": "Yüksek Lisans", "url": ""},
       {"title": "	Akademik yılmazlık ve akademik başarı arasındaki ilişkide sporun düzenleyici rolü", "authors": "Merve Nur Şapolya", "venue": "Hitit Üniversitesi", "year": "2023", "tags": "Yüksek Lisans", "url": ""}
     ]
+    },
+
+   { id: "webuygulamalar", title: "Web Uygulamalarım", show: true, type: "list", groupByYear: false,
+       intro: "Web Uygulamalarım",
+       items: [
+      {
+        "title": "Ölçme Değerlendirme Yönetim Sistemi", 
+        "authors": "", 
+        "venue": "", 
+        "year": "", 
+        "tags": "Dış Bağlantı", 
+        "url": "https://mkemalaydin.github.io/odys/"
+      },
+      {
+        "title": "YÖKAK Avrasya", 
+        "authors": "", 
+        "venue": "", 
+        "year": "", 
+        "tags": "Dış Bağlantı", 
+        "url": "https://mkemalaydin.github.io/avrasya/"
+      }
+    ]
     }
 
   ]
